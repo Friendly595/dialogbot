@@ -1,0 +1,84 @@
+.talk-section{
+    font-family: 'Akrobat';
+    font-style: normal;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hidden {
+    display: none;
+}
+
+body{
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.945) 100%);
+}
+.talk-section .bot-name{
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 30px;
+}
+
+.talk-section .bot-type{
+    font-size: 21px;
+    margin-left: 30px; 
+}
+
+.talk-section .talk-bot{
+    margin-top: 12px;
+    width: 716px;
+    min-height: 74px; /* Установить минимальную высоту */
+    height: auto; /* Позволить высоте изменяться в зависимости от содержимого */
+    background: rgba(20, 20, 20, 0.65);
+    border-radius: 5px;
+}
+
+.talk-section .talk-bot .talk-bot-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    padding: 10px; /* Добавить отступ для создания пространства вокруг текста */
+    font-weight: bold;
+    word-wrap: break-word; /* Обеспечить перенос длинных слов */
+    white-space: pre-wrap; /* Сохранить пробелы и перенести длинные строки */
+}
+
+.talk-section .buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 10px;
+}
+
+.button1-text, .button2-text, .button3-text, .button4-text, .button5-text, .button6-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.button1, .button2, .button3, .button4, .button5, .button6{
+    width: auto;
+    height: 41px;
+    left: 972px;
+    top: 857px;
+    
+    background: rgba(20, 20, 20, 0.65);
+    border: 0.4px solid #616056;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .button6:hover{
+    background: radial-gradient(98.83% 6917.13% at 1.17% 51.22%, rgba(255, 129, 74, 0.65) 0%, rgba(255, 64, 64, 0.65) 100%);
+    border: 0px;
+    border-radius: 5px;
+}

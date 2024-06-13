@@ -1,6 +1,9 @@
 cef.on('updateBotDialog', (botName, botReplica, buttonTexts) => {
     updateBotDialog(botName, botReplica, buttonTexts.split('|'));
 });
+cef.on('removeFocus', () => {
+    cef.set_focus(false);
+});
 
 function updateBotDialog(botName, botReplica, buttonTexts) {
     // Обновляем имя бота
